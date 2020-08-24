@@ -14,3 +14,27 @@ df1.loc[:2,["label1","label2","label3"]] #열 이름으로 접근
 
 df1.iloc[:2,1:4] #열 번호 인덱싱으로 접근
 
+
+# args vs Kwargs (핸즈온에선 kargs라고도 많이씀)
+
+args(non keyworded arguments)
+#개수제한없이 튜플형태의 인자를 받아온다.
+예제코드]
+def func(*args):
+   print(args)
+   print(type(args))
+func(1,2,3)
+-> 1,2,3
+<class 'tuple'>
+
+kwargs(keyworded arguments)
+#개수제한없이 딕셔너리형태의 인자를 받아온다.
+예제코드]
+def func2(**kwargs):
+   print(kwargs)
+   print(type(kwargs))
+func2(a=1,b=2)
+->{ 'a':1, 'b':2 }
+<class 'dict'>
+
+
