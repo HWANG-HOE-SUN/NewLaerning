@@ -48,4 +48,6 @@ func2(a=1,b=2)
 ->{ 'a':1, 'b':2 }
 <class 'dict'>
 
-
+#
+https://rfriend.tistory.com/542
+여러 결측값 각각 다른방식으로 효율적으로 채워넣기 
